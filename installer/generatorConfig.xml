@@ -2,10 +2,10 @@
 <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
   <context id="context1">
-    <jdbcConnection connectionURL="localhost" driverClass="???" password="???" userId="???" />
-    <javaModelGenerator targetPackage="???" targetProject="???" />
-    <sqlMapGenerator targetPackage="???" targetProject="???" />
-    <javaClientGenerator targetPackage="???" targetProject="???" type="XMLMAPPER" />
+    <jdbcConnection connectionURL="jdbc:derby:instdb;create=true" driverClass="org.apache.derby.jdbc.EmbeddedDriver" password="" userId="" />
+    <javaModelGenerator targetPackage="com.tonysys.installer.pojo" targetProject="installer" />
+    <sqlMapGenerator targetPackage="com.tonysys.installer.pojo.map" targetProject="installer" />
+    <javaClientGenerator targetPackage="com.tonysys.installer.dao" targetProject="installer" type="XMLMAPPER" />
     <table schema="???" tableName="???">
       <columnOverride column="???" property="???" />
     </table>
